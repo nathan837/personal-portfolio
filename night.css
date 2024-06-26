@@ -1,0 +1,121 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: border-box;
+    font-family: cursive;
+  }
+  body{
+    display: flex;
+   align-items: center;
+    min-height: 100vh;
+    background-color: #010d16;
+    overflow-y: hidden;
+  }
+  
+  header{
+  border: px solid #7d7b7b;
+  position: fixed;
+  top: -30px;
+  left: 10px;
+  width: 110%;
+  padding: 10px 0px ;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  z-index:99;
+  }
+  .navigation svg{
+    margin-left: 45pc;
+    color:#f6f7f8;
+    width: 33px;
+    height: 33px;
+  }
+  .navigation a.navi {
+    position: relative;
+    font-size: 2.0em;
+    color: #f5ebeb;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navigation a.navi::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:#d9dcde;
+    border-radius: 0px;
+    transform-origin: rigth;
+    transform: scalex(0);
+    transition: transform .1s;
+  
+  
+  }
+  .navigation a.navi:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  
+  div.gallery {
+    
+     margin-top: 17px ;
+     margin-left: 60px;
+     width: 270px;
+     background-color: #010d16;
+     float: left ;
+     transition: 1s;
+  
+   }
+   
+   div.gallery:hover {
+    width: 370px;
+     background-color: #031625;
+     box-shadow:-2px 1px  22px #bdbbbb;
+   }
+   div.gallery:active{
+     box-shadow: none;
+   }
+   
+   div.gallery img {
+     width: 260px;
+     height: 200px;
+     margin-left: 4px;
+     border: 1px solid #c0bebe;
+     transition: 1s;
+   }
+   div.gallery img:hover {
+    width: 360px;
+    height: 200px;
+    margin-left: 4px;
+    border: 1px solid #c0bebe;
+  }
+   
+   div.desc {
+    color: #f5ebeb;
+     padding: 4px;
+    text-align: center;
+    font-family: monospace;
+   }
+   section{
+     margin-left: 75px;
+   }
+   header{
+     width: 100%;
+     height:100px;
+  
+   }
+   header h1{
+     margin-left: 500px;
+     font-size: 50PX;
+     font-weight: 100px;
+     font-family: monospace;
+     color:black;
+  
+  
+     
+   }
+  
+  
